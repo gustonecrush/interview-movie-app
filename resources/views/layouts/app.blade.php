@@ -11,13 +11,14 @@
 
     {{-- ========== CSS LINKS =========== --}}
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
     @vite('resources/css/app.css')
 </head>
-<body>
+<body class="bg-stream-dark font-poppins">
 
     <div class="mx-auto max-w-screen hidden lg:block">
         @include('layouts.sidebar')
-
+        @include('layouts.content')
     </div>
 
     <div class="mx-auto px-4 w-full md:w-7/12 h-screen text-red-900 block lg:hidden flex">
