@@ -1,4 +1,4 @@
-@extends('layouts.header_footer', [
+@extends('layouts.app', [
     'title' => 'Home'
 ])
 
