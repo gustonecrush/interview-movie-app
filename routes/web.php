@@ -16,13 +16,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 // main page
-Route::get('/', [MovieController::class, 'index']);
+Route::get('/', [MovieController::class, 'index'])->name('home');
 
 // category page
-Route::get('/movie/now-playing', [MovieController::class, 'nowPlaying']);
-Route::get('/movie/popular', [MovieController::class, 'popular']);
-Route::get('/movie/top-rated', [MovieController::class, 'topRated']);
-Route::get('/movie/upcoming', [MovieController::class, 'upcoming']);
+Route::get('/movie/now-playing', [MovieController::class, 'nowPlaying'])->name(
+    'now-playing'
+);
+Route::get('/movie/popular', [MovieController::class, 'popular'])->name(
+    'popular'
+);
+Route::get('/movie/top-rated', [MovieController::class, 'topRated'])->name(
+    'top-rated'
+);
+Route::get('/movie/upcoming', [MovieController::class, 'upcoming'])->name(
+    'upcoming'
+);
 
 // crud route
 Route::post('/movie', [MovieController::class, 'store']);
