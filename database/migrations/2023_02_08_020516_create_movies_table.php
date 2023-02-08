@@ -26,6 +26,7 @@ return new class extends Migration {
             $table->integer('vote_count');
             $table->string('video')->nullable();
             $table->float('vote_average');
+            $table->foreignId('category_id');
             $table->timestamps();
         });
     }
