@@ -46,6 +46,19 @@
                 "draggable": ">1"
             });
         })
+
+        const axios = require('axios');
+
+        async function getMovies() {
+            try {
+                const response = await axios.get('https://api.themoviedb.org/3/movie/550?api_key=2e856250c0594b8135bd2d581713f693');
+                console.log(response);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        getMovies()
     </script>
 </body>
 

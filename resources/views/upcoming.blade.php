@@ -1,5 +1,5 @@
 @extends('layouts.app', [
-    'title' => 'Home'
+    'title' => 'Upcoming',
 ])
 
 @section('content')

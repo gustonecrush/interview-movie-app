@@ -1,11 +1,11 @@
 @extends('layouts.app', [
-    'title' => 'Home'
+    'title' => 'Popular',
 ])
 
 @section('content')
     <div class="grid grid-cols-2 gap-5 xl:gap-12 overflow-x-scroll">
         @foreach ($responseBody as $item)
-            <div class="col-span-1 relative overflow-hidden group">
+         <div class="col-span-1 relative overflow-hidden group">
           <img
             src={{ 'https://image.tmdb.org/t/p/original' . $item->backdrop_path }}
             class="object-cover rounded-[30px]"

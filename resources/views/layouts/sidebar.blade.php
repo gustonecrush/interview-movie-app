@@ -7,7 +7,7 @@
       <img src="{{ asset('/assets/images/stream.svg') }}" alt="" />
     </a>
     <div class="links flex flex-col mt-16 gap-2">
-      <a href="{{ route('home') }}" class="side-link active">
+      <a href="{{ route('home') }}" class="side-link {{ $title == "Home" ? 'active' : '' }}">
         <svg
           width="24"
           height="24"
@@ -37,7 +37,7 @@
         </svg>
         Watch
       </a>
-      <a href="{{ route('now-playing') }}" class="side-link group">
+      <a href="{{ route('now-playing') }}" class="side-link group  {{ $title == "Now Playing" ? 'active' : '' }}">
         <svg
           width="24"
           height="24"
@@ -68,7 +68,7 @@
         </svg>
         Now Playing
       </a>
-      <a href="{{ route('popular') }}" class="side-link">
+      <a href="{{ route('popular') }}" class="side-link  {{ $title == "Popular" ? 'active' : '' }}">
         <svg
           width="24"
           height="24"
@@ -86,7 +86,7 @@
         </svg>
         Popular
       </a>
-      <a href="{{ route('top-rated') }}" class="side-link">
+      <a href="{{ route('top-rated') }}" class="side-link  {{ $title == "Top Rated" ? 'active' : '' }}">
         <svg
           width="24"
           height="24"

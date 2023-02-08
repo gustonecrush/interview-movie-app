@@ -31,7 +31,7 @@
             id="dropdown-stream"
           >
             <a
-              href="dashboard.html"
+              href=""
               class="transition-all hover:bg-sky-100 p-4"
             >
               Watch
@@ -50,66 +50,13 @@
 
     <!-- Featured -->
     <div>
-      <div class="font-semibold text-[22px] text-white mb-[18px]">Featured</div>
-      
-      <div class="grid grid-cols-2 gap-5 xl:gap-12">
-        <div class="col-span-1 relative overflow-hidden group">
-          <img
-            src="assets/images/featured-1.webp"
-            class="object-cover rounded-[30px]"
-            alt=""
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black rounded-bl-[28px] rounded-br-[28px] z-10 translate-y-0 group-hover:translate-y-[300px] transition ease-in-out duration-500 group-hover:bg-transparent"
-          >
-            <div class="px-7 pb-7">
-              <div class="font-medium text-xl text-white">Avatar New Era</div>
-              <p class="mb-0 text-stream-gray text-base mt-[10px]">2022</p>
-            </div>
-          </div>
-          <div
-            class="absolute top-1/2 left-1/2 -translate-y-[500px] group-hover:-translate-y-1/2 -translate-x-1/2 z-20 transition ease-in-out duration-500"
-          >
-            <img src="assets/images/ic_play.svg" class="" width="80" alt="" />
-          </div>
-          <a
-            href="dashboard-movie_details.html"
-            class="inset-0 absolute z-50"
-          ></a>
-        </div>
-        <div class="col-span-1 relative overflow-hidden group">
-          <img
-            src="assets/images/featured-2.webp"
-            class="object-cover rounded-[30px]"
-            alt=""
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black rounded-bl-[28px] rounded-br-[28px] z-10 translate-y-0 group-hover:translate-y-[300px] transition ease-in-out duration-500 group-hover:bg-transparent"
-          >
-            <div class="px-7 pb-7">
-              <div class="font-medium text-xl text-white">
-                Death on the Nile
-              </div>
-              <p class="mb-0 text-stream-gray text-base mt-[10px]">2022</p>
-            </div>
-          </div>
-          <div
-            class="absolute top-1/2 left-1/2 -translate-y-[500px] group-hover:-translate-y-1/2 -translate-x-1/2 z-20 transition ease-in-out duration-500"
-          >
-            <img src="assets/images/ic_play.svg" class="" width="80" alt="" />
-          </div>
-          <a
-            href="dashboard-movie_details.html"
-            class="inset-0 absolute z-50"
-          ></a>
-        </div>
-      </div>
-      
+      <div class="font-semibold text-[22px] text-white mb-[18px]">{{ $title }}</div>
+      @yield('content')
     </div>
     <!-- /Featured -->
 
     <!-- Continue Watching -->
-    <div>
+    {{-- <div>
       <div class="font-semibold text-[22px] text-white mb-[18px]">
         Continue Watching
       </div>
@@ -227,7 +174,7 @@
         </div>
       </div>
 
-    </div>
+    </div> --}}
     <!-- /Continue Watching -->
   </div>
 </div>
